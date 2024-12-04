@@ -1,0 +1,259 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+/* Body styling */
+html, body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    line-height: 1.6;
+    background-color: #1a1a2e; /* Dark navy background */
+    color: #ffffff; /* White text for contrast */
+    height: 100%; /* Ensure full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #0f3460, #162447); /* Gradient navy background */
+    color: #e8e8e8; /* Light gray for softer text contrast */
+    height: 120px; /* Slightly taller for better visibility */
+    padding: 0 2rem; /* Add horizontal padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+	padding: 1rem;
+}
+
+/* Logo and header content */
+.headerContent {
+    display: flex;
+    align-items: center;
+}
+
+#myImage {
+    width: 70px; /* Slightly larger for emphasis */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.headerText h1 {
+    font-size: 1.8rem; /* Modern, larger font size */
+    margin-bottom: 5px;
+}
+
+.headerText p {
+    font-size: 1rem; /* Subtext smaller but still readable */
+    color: #b0b0b0; /* Softer color for less emphasis */
+}
+
+/* Navigation styling */
+nav {
+    background: #0f3460; /* Deep navy */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow under nav */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem; /* Increase spacing for a cleaner layout */
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Rounded links */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+nav ul a:hover {
+    background: #162447; /* Darker navy hover effect */
+    color: #FFD700; /* Golden highlight */
+}
+
+nav ul a.active {
+    background: #e94560; /* Bold red highlight for active link */
+    color: #ffffff;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 2rem;
+    color: #e8e8e8; /* Lighter text for readability */
+    background: #1a1a2e; /* Matches the overall theme */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle inner shadow for depth */
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #162447, #0f3460); /* Gradient footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Shadow above footer */
+}
+
+/* Styling for Opening Hours */
+.openingHours {
+    background: linear-gradient(135deg, #1f4068, #162447); /* Gradient background */
+    padding: 2rem;
+    border-radius: 15px; /* Smooth edges */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
+                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+    color: #ffffff; /* White text for high contrast */
+    max-width: 600px;
+    margin: 2rem auto; /* Center the section */
+    text-align: center; /* Center text */
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.openingHours h1 {
+    font-size: 2rem;
+    color: #00d4ff; /* Futuristic cyan text */
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; /* Neon glow effect */
+    margin-bottom: 1rem;
+}
+
+.openingHours dl {
+    margin: 0; /* Remove default margin */
+}
+
+.openingHours dt {
+    font-size: 1.3rem;
+    color: #ffffff; /* Highlight section titles */
+    margin-top: 1rem;
+    text-transform: uppercase; /* Add modern flair with uppercase */
+    text-shadow: 0 0 5px #ffffff; /* Subtle glow */
+}
+
+.openingHours dd {
+    font-size: 1rem;
+    color: #b0c7ff; /* Softer cyan for details */
+    margin-bottom: 0.5rem;
+}
+
+.openingHours dd::before {
+    content: "⏰ "; /* Add a clock emoji for visual appeal */
+    color: #00d4ff; /* Same as header text */
+}
+
+.openingHours br {
+    margin: 1rem 0; /* Add spacing between days */
+}
+
+.eventSection {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0; /* Add space around the event section */
+	background: linear-gradient(135deg, #1f4068, #162447);
+    border-radius: 15px;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
+                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+}
+
+#eventImage {
+    flex: 0 0 40%; /* Image takes 40% of the container width */
+    max-width: 40%; /* Ensure the image stays within its section */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    display: block; /* Ensures consistent layout for images */
+    margin-right: 15px; /* Center the image */
+}
+
+.eventDescription {
+    flex: 1; /* Description takes up the remaining space */
+    color: #e8e8e8;
+}
+
+.eventDescription h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e8e8e8; /* Highlighted title in gold */
+}
+
+.eventDescription p {
+    margin-bottom: 0.5rem; /* Space between paragraphs */
+    font-size: 1rem;
+    color: #b0b0b0; /* Softer contrast for text */
+}
+
+#eventImage:hover {
+    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
+}
+
+.contactInfo, .contactForm, .socialLinks {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1f4068, #162447);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
+                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+}
+
+.contactInfo h2, .contactForm h2, .socialLinks h2 {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.contactForm label, .contactForm input, .contactForm textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contactForm input, .contactForm textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #e8e8e8;
+    color: #333333;
+    font-size: 1rem;
+}
+
+.contactForm button {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #e94560;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contactForm button:hover {
+    background: #FFD700;
+}
+
+.socialLinks a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#successMessage {
+    padding: 1rem;
+    background-color: #0f3460;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #FFD700;
+}

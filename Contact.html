@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Sports Complex</title>
+    <link rel="icon" href="../images/AI.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/A1Style.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerContent">
+            <img id="myImage" src="../images/AI.png" alt="AI Sports Complex Logo">
+            <div class="headerText">
+                <h1>Contact Us</h1>
+                <p>Our team is here to ensure you have the best experience possible!</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="Facilities.html">Facilities</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <div class="contactInfo">
+                <h2>Get in Touch</h2>
+                <p><strong>Email:</strong> customersupport@aisportscomplex.com</p>
+                <p><strong>Phone:</strong> 04-4841809</p>
+                <p><strong>Address:</strong> AI Sports Complex, 09000 Kulim, Kedah</p>
+                <p><strong>Operating Hours:</strong> Mon-Fri, 8:00 a.m. - 10:00 p.m.</p>
+            </div>
+
+            <div class="contactForm">
+                <h2>Drop Us a Message</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" onclick = "receiveForm()">Submit</button>
+                </form>
+            </div>
+
+            <div class="socialLinks">
+                <h2>Follow Us</h2>
+                <p>
+                    <a href="https://www.facebook.com/amanizzat16" target="_blank">Facebook</a> |
+                    <a href="https://instagram.com/amanizzat" target="_blank">Instagram</a> |
+                    <a href="https://tiktok.com/@amanizzat" target="_blank">TikTok</a>
+                </p>
+            </div>
+			<div id="successMessage" style="display: none; color: #FFD700;">
+                    <p>Your message has been submitted successfully. Thank you!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI Sports Complex. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/A1Script.js"></script>
+</body>
+</html>
