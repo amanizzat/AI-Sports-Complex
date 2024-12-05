@@ -96,6 +96,14 @@ main {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle inner shadow for depth */
 }
 
+#content {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+    gap: 2rem; /* Add space between the sections */
+    justify-content: space-between; /* Space out the two sections */
+    padding: 2rem; /* Add padding around the content */
+}
+
 /* Footer styling */
 footer {
     background: linear-gradient(90deg, #162447, #0f3460); /* Gradient footer */
@@ -107,31 +115,28 @@ footer {
 }
 
 /* Styling for Opening Hours */
-.openingHours {
+.openingHours, .crazyHours {
     background: linear-gradient(135deg, #1f4068, #162447); /* Gradient background */
     padding: 2rem;
     border-radius: 15px; /* Smooth edges */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
                 inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
     color: #ffffff; /* White text for high contrast */
-    max-width: 600px;
-    margin: 2rem auto; /* Center the section */
     text-align: center; /* Center text */
     font-family: 'Roboto', Arial, sans-serif;
+	flex: 1; /* Each section takes equal space */
+    max-width: 48%; /* Ensure sections don't exceed 48% of the container width */
+    box-sizing: border-box; /* Include padding and borders in width */
 }
 
-.openingHours h1 {
+.openingHours h1, .crazyHours h1 {
     font-size: 2rem;
     color: #00d4ff; /* Futuristic cyan text */
     text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; /* Neon glow effect */
     margin-bottom: 1rem;
 }
 
-.openingHours dl {
-    margin: 0; /* Remove default margin */
-}
-
-.openingHours dt {
+.openingHours dt, .crazyHours dt {
     font-size: 1.3rem;
     color: #ffffff; /* Highlight section titles */
     margin-top: 1rem;
@@ -139,19 +144,10 @@ footer {
     text-shadow: 0 0 5px #ffffff; /* Subtle glow */
 }
 
-.openingHours dd {
+.openingHours dd, .crazyHours dd {
     font-size: 1rem;
     color: #b0c7ff; /* Softer cyan for details */
     margin-bottom: 0.5rem;
-}
-
-.openingHours dd::before {
-    content: "⏰ "; /* Add a clock emoji for visual appeal */
-    color: #00d4ff; /* Same as header text */
-}
-
-.openingHours br {
-    margin: 1rem 0; /* Add spacing between days */
 }
 
 .eventSection {
@@ -164,7 +160,7 @@ footer {
                 inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
 }
 
-#eventImage {
+#happeningImage, #upcomingImage {
     flex: 0 0 40%; /* Image takes 40% of the container width */
     max-width: 40%; /* Ensure the image stays within its section */
     height: auto;
@@ -172,6 +168,11 @@ footer {
     cursor: pointer; /* Pointer cursor for interactivity */
     display: block; /* Ensures consistent layout for images */
     margin-right: 15px; /* Center the image */
+}
+
+#happeningImage:hover, #upcomingImage:hover {
+    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
 }
 
 .eventDescription {
@@ -189,11 +190,6 @@ footer {
     margin-bottom: 0.5rem; /* Space between paragraphs */
     font-size: 1rem;
     color: #b0b0b0; /* Softer contrast for text */
-}
-
-#eventImage:hover {
-    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
 }
 
 .contactInfo, .contactForm, .socialLinks {
