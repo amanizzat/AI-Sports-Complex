@@ -9,7 +9,6 @@
 html, body {
     font-family: 'Roboto', Arial, sans-serif; /* Modern font */
     line-height: 1.6;
-    background-color: #1a1a2e; /* Dark navy background */
     color: #ffffff; /* White text for contrast */
     height: 100%; /* Ensure full height */
     display: flex;
@@ -18,7 +17,7 @@ html, body {
 
 /* Header styling */
 header {
-    background: linear-gradient(90deg, #0f3460, #162447); /* Gradient navy background */
+    background: linear-gradient(90deg, #ffa07a, #4682b4); /* Gradient navy background */
     color: #e8e8e8; /* Light gray for softer text contrast */
     height: 120px; /* Slightly taller for better visibility */
     padding: 0 2rem; /* Add horizontal padding */
@@ -27,6 +26,7 @@ header {
     justify-content: space-between; /* Space between logo and text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 	padding: 1rem;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo and header content */
@@ -52,7 +52,7 @@ header {
 
 /* Navigation styling */
 nav {
-    background: #0f3460; /* Deep navy */
+    background: linear-gradient(90deg, #ffa07a, #4682b4); /* Deep navy */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow under nav */
 }
 
@@ -92,26 +92,26 @@ main {
     flex: 1;
     padding: 2rem;
     color: #e8e8e8; /* Lighter text for readability */
-    background: #1a1a2e; /* Matches the overall theme */
+    background: linear-gradient(90deg, #ffa07a, #4682b4); /* Matches the overall theme */
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle inner shadow for depth */
-}
-
-#content {
-    display: flex; /* Enable flexbox layout */
-    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
-    gap: 2rem; /* Add space between the sections */
-    justify-content: space-between; /* Space out the two sections */
-    padding: 2rem; /* Add padding around the content */
 }
 
 /* Footer styling */
 footer {
-    background: linear-gradient(90deg, #162447, #0f3460); /* Gradient footer */
+    background: linear-gradient(90deg, #ffa07a, #4682b4); /* Gradient footer */
     color: #ffffff;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Shadow above footer */
+}
+
+#indexContent {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+    gap: 2rem; /* Add space between the sections */
+    justify-content: space-between; /* Space out the two sections */
+    padding: 2rem; /* Add padding around the content */
 }
 
 /* Styling for Opening Hours */
@@ -152,13 +152,14 @@ footer {
 
 .eventSection {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 1.5rem 0; /* Add space around the event section */
 	background: linear-gradient(135deg, #1f4068, #162447);
     border-radius: 15px;
 	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
                 inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
 }
+
 
 #happeningImage, #upcomingImage {
     flex: 0 0 40%; /* Image takes 40% of the container width */
@@ -178,6 +179,7 @@ footer {
 .eventDescription {
     flex: 1; /* Description takes up the remaining space */
     color: #e8e8e8;
+	text-align: left;
 }
 
 .eventDescription h2 {
