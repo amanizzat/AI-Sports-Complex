@@ -10,9 +10,9 @@
 
 <body>
 	<header>
-		<div class = "headerContent">
+		<div class="headerContent">
 			<img id="myImage" src="AI.png" alt="AI Sports Complex Logo">
-			<div class = "headerText">
+			<div class="headerText">
 				<h1>Book Your Session Now</h1>
 				<p>Reserve your spot in just a few clicks.</p>
 			</div>
@@ -20,37 +20,78 @@
 	</header>
 	
 	<nav>
-        <ul>
+		<ul>
 			<li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+			<li><a href="events.html">Events</a></li>
 			<li><a href="facilities.html">Facilities</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="membership.html">Membership</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</nav>
 	
 	<main>
-        <section id="content">
-            <div>
-				<h1>Membership Plan</h1>
+		<section id="bookingContent">
+			<h1>Booking Form</h1>
+			<p>Fill out the form below to book your session:</p>
+			<form id="bookingForm" onsubmit="submitBooking(); return false;">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required><br><br>
+				
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+				
+				<label for="facility">Facility:</label><br>
+				<select id="facility" name="facility" required onchange="updateForm()">
+					<option value="">Select Facility</option>
+					<option value="Gymnasium">Gymnasium</option>
+					<option value="Swimming Pool">Swimming Pool</option>
+					<option value="Squash Courts">Squash Courts</option>
+					<option value="Badminton Courts">Badminton Courts</option>
+					<option value="Tennis Courts">Tennis Courts</option>
+					<option value="Football Field">Football Field</option>
+				</select><br><br>
+				
+				<div id="courtForm" style="display: none;">
+					<div id="numCourtsForm">
+						<label for="numCourts">Number of Courts:</label><br>
+						<input type="number" id="numCourts" name="numCourts" min="1" required><br><br>
+					</div>
+					<label for="numHours">Number of Hours:</label><br>
+					<input type="number" id="numHours" name="numHours" min="1" required><br><br>
+
+					<label for="courtDate">Date:</label><br>
+					<input type="date" id="courtDate" name="courtDate" required><br><br>
+
+					<label for="courtTime">Time:</label><br>
+					<input type="time" id="courtTime" name="courtTime" required><br><br>
+
+					<p id="courtPrice">Price: RM 0</p>
+				</div>
+				
+				<div id="priceInfo" style="display: none;">
+					<p><b>Price: RM 10</b></p>
+					<p><b>Note:</b> Valid for one entry within one week.</p>
+					<p><b>Bank Account:</b> 123456789 (AI Sports Complex)</p>
+				</div>
+				
+				<label for="receipt">Upload Payment Receipt:</label><br>
+				<input type="file" id="receipt" name="receipt" accept="image/*,application/pdf" required><br><br>
+				
+				<button type="submit" onclick = "submitBooking()">Submit Booking</button>
+			</form>
+
+			<div id="confirmationMessage" style="display: none; margin-top: 20px; background: #d4edda; padding: 15px; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;">
+				<p><b>Booking Completed!</b> Please wait for your booking ticket to be sent to your email.</p>
 			</div>
-			<br>
-			<div>
-				<h1>Indoor</h1>
-			</div>
-			<br>
-			<div>
-				<h1>Outdoor</h1>
-			</div>
-        </section>
-    </main>
+		</section>
+	</main>
 	
 	<footer>
-        <p>&copy; 2024 AI Sports Complex. All rights reserved.</p>
-    </footer>
+		<p>&copy; 2024 AI Sports Complex. All rights reserved.</p>
+	</footer>
 	
 	<script src="A1Script.js"></script>
-	
 </body>
-
 </html>
