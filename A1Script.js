@@ -9,6 +9,7 @@ navLinks.forEach(link => {
 	}
 });
 
+// Array facilities for booking
 const facilities = [
     "Gymnasium",
     "Swimming Pool",
@@ -41,6 +42,7 @@ document.addEventListener('click', (event) => {
 // Filter facilities dynamically as user types
 searchInput.addEventListener('keyup', filterFacilities);
 
+// Dynamically updates a list of facility suggestions
 function populateFacilities() {
     suggestionList.innerHTML = '';
     facilities.forEach(facility => {
@@ -51,6 +53,7 @@ function populateFacilities() {
     });
 }
 
+// Filter facility based on user input
 function filterFacilities() {
     const input = searchInput.value.toLowerCase();
     suggestionList.innerHTML = '';
@@ -77,13 +80,14 @@ function filterFacilities() {
     }
 }
 
-
+// Select facility from suggestion list
 function selectFacility(facility) {
     searchInput.value = facility;
     filterVisibleSections(facility.toLowerCase());
     suggestionList.style.display = 'none';
 }
 
+// Only display what user search
 function filterVisibleSections(keyword) {
     const facilitySections = document.querySelectorAll('.facilitySection');
     facilitySections.forEach(section => {
@@ -100,7 +104,7 @@ function updatePrice() {
 	priceInfo.style.display = facility === "Gymnasium" || facility === "Swimming Pool" ? "block" : "none";
 }
 
-// Handle form submission
+// Handle form submission in booking page
 function submitBooking() {
 	event.preventDefault();
 	
@@ -128,6 +132,7 @@ function submitBooking() {
 	confirmationMessage.scrollIntoView({ behavior: "smooth" });
 }
 
+// Update booking form
 function updateForm() {
 	const facility = document.getElementById('facility').value;
 	const priceInfo = document.getElementById('priceInfo');
@@ -171,6 +176,7 @@ function updateForm() {
 	}
 }
 
+// Calculate price for booking
 function calculateCourtOrFieldPrice() {
     const facility = document.getElementById('facility').value;
     const numHours = parseInt(document.getElementById('numHours').value) || 0;
@@ -212,6 +218,7 @@ function calculateCourtOrFieldPrice() {
     document.getElementById('courtPrice').textContent = `Price: RM ${basePrice.toFixed(2)}${discountText}`;
 }
 
+// Show message after user submit message in contact form
 function receiveForm() {
     // Prevent the default form submission behavior
     event.preventDefault();
