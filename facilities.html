@@ -10,9 +10,9 @@
 
 <body>
 	<header>
-		<div class = "headerContent">
+		<div class="headerContent">
 			<img id="myImage" src="AI.png" alt="AI Sports Complex Logo">
-			<div class = "headerText">
+			<div class="headerText">
 				<h1>Facilities at AI Sports Complex</h1>
 				<p>Browse our facilities below to see all the ways we support your goals and passions.</p>
 			</div>
@@ -20,37 +20,128 @@
 	</header>
 	
 	<nav>
-        <ul>
+        	<ul>
 			<li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+            		<li><a href="events.html">Events</a></li>
 			<li><a href="facilities.html">Facilities</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            		<li><a href="booking.html">Booking</a></li>
+			<li><a href="membership.html">Membership</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+		            <li><a href="contact.html">Contact</a></li>
+        	</ul>
 	</nav>
 	
 	<main>
-        <section id="content">
-            <div>
-				<h1>Indoor Facilities</h1>
-			</div>
-			<br>
-			<div>
-				<h1>Outdoor Facilities</h1>
-			</div>
-			<br>
-			<div>
-				<h1>Amenities</h1>
-			</div>
-        </section>
+		<!-- Search Bar Section -->
+    		<div class="searchBar">
+        		<input type="text" id="facilitySearch" placeholder="Search facilities..." onkeyup="filterFacilities()">
+        		<ul id="suggestionList"></ul>
+    		</div>
+    
+    		<section id="facilityContent">
+        		<!-- Indoor Facilities Section -->
+        		<div>
+            			<h1>Indoor Facilities</h1>
+            			<div class="facilitySection" data-facility="gymnasium">
+                			<img src="Gym.png" alt="Gym" class="facilityImage">
+					<div class="facilityText">
+						<h2>Gymnasium</h2>
+                				<p>Fully equipped with the latest cardio machines, weightlifting stations, and functional training areas to suit beginners and pros alike.</p>
+						<p>Price per entry: <b>RM 10</b></p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="swimming pool">
+                			<img src="Pool.png" alt="Pool" class="facilityImage">
+					<div class="facilityText">
+						<h2>Swimming Pool</h2>
+                				<p>Perfect for training, competitions, and recreational swimming with temperature-controlled waters and lifeguards on duty.</p>
+						<p>Price per entry: <b>RM 10</b></p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="squash courts">
+                			<img src="Squash.png" alt="Squash Courts" class="facilityImage">
+					<div class="facilityText">
+						<h2>Squash Courts</h2>
+                				<p>Enjoy professional-grade squash courts designed for casual games and tournaments.</p>
+						<p>6 available courts!</b></p>
+						<p>Price per hour: <b>RM 6</b></p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="badminton courts">
+                			<img src="Badminton.png" alt="Badminton Courts" class="facilityImage">
+					<div class="facilityText">
+						<h2>Badminton Courts</h2>
+                				<p>Professional courts for players of all levels.</p>
+						<p>6 available courts!</b></p>
+						<p>Price per hour: <b>RM 6</b></p>
+					</div>
+				</div>
+        		</div>
+        		<br>
+			
+        		<!-- Outdoor Facilities Section -->
+        		<div>
+            			<h1>Outdoor Facilities</h1>
+            			<div class="facilitySection" data-facility="football field">
+                			<img src="Football.png" alt="Football Field" class="facilityImage">
+					<div class="facilityText">
+						<h2>Football Field</h2>
+                				<p>Well-maintained grass field ideal for matches and practice sessions, complete with floodlights for night games.</p>
+						<p>Price per hour: <b>RM 150</b></p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="tennis courts">
+                			<img src="Tennis.png" alt="Tennis Courts" class="facilityImage">
+					<div class="facilityText">
+						<h2>Tennis Courts</h2>
+                				<p>High-quality courts for singles or doubles matches, with viewing stands for spectators.</p>
+						<p>3 available courts!</b></p>
+						<p>Price per hour: <b>RM 6</b></p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="running track">
+                			<img src="Track.png" alt="Running Track" class="facilityImage">
+					<div class="facilityText">
+						<h2>Running Track</h2>
+                				<p>A 400-meter track for jogging, sprinting, and athletic training.</p>
+						<p><b>Free entry for everyone.</b></p>
+					</div>
+				</div>
+        		</div>
+        		<br>
+			
+        		<!-- Amenities Section -->
+        		<div>
+            			<h1>Amenities</h1>
+            			<div class="facilitySection" data-facility="locker rooms">
+                			<img src="Locker.png" alt="Locker Rooms" class="facilityImage">
+					<div class="facilityText">
+						<h2>Locker Room</h2>
+                				<p>Spacious and secure locker rooms with showers, changing areas, and towel service.</p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="sports cafe">
+                			<img src="Cafe.png" alt="Sports Cafe" class="facilityImage">
+					<div class="facilityText">
+						<h2>Sport Cafe</h2>
+                				<p>Grab a bite or refresh yourself with healthy snacks and beverages at our on-site cafe.</p>
+					</div>
+				</div>
+            			<div class="facilitySection" data-facility="prayer room">
+                			<img src="Surau.png" alt="Prayer hall" class="facilityImage">
+					<div class="facilityText">
+						<h2>Prayer Room</h2>
+                				<p>Quiet and comfortable prayer room for our customers.</p>
+					</div>
+				</div>
+        		</div>
+    		</section>
     </main>
 	
 	<footer>
-        <p>&copy; 2024 AI Sports Complex. All rights reserved.</p>
-    </footer>
+        	<p>&copy; 2024 AI Sports Complex. All rights reserved.</p>
+    	</footer>
 	
 	<script src="A1Script.js"></script>
-	
 </body>
-
 </html>
