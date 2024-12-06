@@ -7,9 +7,9 @@
 
 /* Body styling */
 html, body {
-    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
     height: 100%; /* Ensure full height */
     display: flex;
     flex-direction: column;
@@ -17,9 +17,9 @@ html, body {
 
 /* Header styling */
 header {
-    background: linear-gradient(90deg, #2c5b7f, #1a3c5a, #334e68); /* Gradient navy background */
-    height: 120px; /* Slightly taller for better visibility */
-    padding: 0 2rem; /* Add horizontal padding */
+    background: linear-gradient(90deg, #2c5b7f, #1a3c5a, #334e68);
+    height: 120px;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Space between logo and text */
@@ -35,25 +35,25 @@ header {
 }
 
 #myImage {
-    width: 70px; /* Slightly larger for emphasis */
+    width: 70px;
     margin-right: 15px; /* Space between image and text */
 }
 
 .headerText h1 {
-    font-size: 1.8rem; /* Modern, larger font size */
+    font-size: 1.8rem;
     margin-bottom: 5px;
 	color: White;
 }
 
 .headerText p {
-    font-size: 1rem; /* Subtext smaller but still readable */
-    color: White; /* Softer color for less emphasis */
+    font-size: 1rem;
+    color: White;
 }
 
 /* Navigation styling */
 nav {
-    background: linear-gradient(90deg, #1f4068, #162447, #334e68); /* Deep navy */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow under nav */
+    background: linear-gradient(90deg, #1f4068, #162447, #334e68);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1.5rem; /* Increase spacing for a cleaner layout */
+    margin: 0 1.5rem;
 }
 
 nav ul a {
@@ -73,17 +73,17 @@ nav ul a {
     font-weight: 600;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 4px; /* Rounded links */
+    border-radius: 4px;
     transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
 
 nav ul a:hover {
-    background: #e94560; /* Darker navy hover effect */
-    color: #FFD700; /* Golden highlight */
+    background: #e94560;
+    color: #FFD700;
 }
 
 nav ul a.active {
-    background: #e94560; /* Bold red highlight for active link */
+    background: #e94560;
     color: #ffffff;
 }
 
@@ -91,14 +91,14 @@ nav ul a.active {
 main {
     flex: 1;
     padding: 2rem;
-    color: #e8e8e8; /* Lighter text for readability */
-    background: linear-gradient(90deg, #2c5b7f, #1a3c5a, #334e68); /* Matches the overall theme */
+    color: #e8e8e8;
+    background: linear-gradient(90deg, #2c5b7f, #1a3c5a, #334e68);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle inner shadow for depth */
 }
 
 /* Footer styling */
 footer {
-    background: linear-gradient(90deg, #1f4068, #162447, #334e68); /* Gradient footer */
+    background: linear-gradient(90deg, #1f4068, #162447, #334e68);
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -107,8 +107,8 @@ footer {
 }
 
 #indexContent {
-    display: flex; /* Enable flexbox layout */
-    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem; /* Add space between the sections */
     justify-content: space-between; /* Space out the two sections */
     padding: 2rem; /* Add padding around the content */
@@ -116,77 +116,77 @@ footer {
 
 /* Styling for Opening Hours */
 .openingHours, .crazyHours {
-    background: linear-gradient(135deg, #1f4068, #162447); /* Gradient background */
+    background: linear-gradient(135deg, #1f4068, #162447);
     padding: 2rem;
     border-radius: 15px; /* Smooth edges */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
                 inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
-    color: #ffffff; /* White text for high contrast */
+    color: #ffffff; 
     text-align: center; /* Center text */
     font-family: 'Roboto', Arial, sans-serif;
 	flex: 1; /* Each section takes equal space */
-    max-width: 48%; /* Ensure sections don't exceed 48% of the container width */
+    max-width: 48%;
     box-sizing: border-box; /* Include padding and borders in width */
 }
 
 .openingHours h1, .crazyHours h1 {
     font-size: 2rem;
-    color: #00d4ff; /* Futuristic cyan text */
-    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; /* Neon glow effect */
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
     margin-bottom: 1rem;
 }
 
 .openingHours dt, .crazyHours dt {
     font-size: 1.3rem;
-    color: #ffffff; /* Highlight section titles */
+    color: #ffffff;
     margin-top: 1rem;
-    text-transform: uppercase; /* Add modern flair with uppercase */
-    text-shadow: 0 0 5px #ffffff; /* Subtle glow */
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ffffff;
 }
 
 .openingHours dd, .crazyHours dd {
     font-size: 1rem;
-    color: #b0c7ff; /* Softer cyan for details */
+    color: #b0c7ff;
     margin-bottom: 0.5rem;
 }
 
 #locationSection {
     display: flex;
-    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    flex-direction: column;
     align-items: center; /* Center-align content */
-    padding: 0; /* Remove extra padding to avoid overflow */
-    background: linear-gradient(135deg, #1f4068, #162447); /* Gradient for the section */
-    border-radius: 15px; /* Rounded corners for the section */
+    padding: 0;
+    background: linear-gradient(135deg, #1f4068, #162447); 
+    border-radius: 15px; 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
-                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Shadows for aesthetics */
-    overflow: hidden; /* Ensure no content overflows */
-    width: fit-content; /* Dynamically fit to content width */
-    margin-top: 2rem; /* Center the section horizontally */
+                inset 0 0 10px rgba(0, 255, 255, 0.3); /
+    overflow: hidden; 
+    width: fit-content; 
+    margin-top: 2rem; 
 }
 
 #locationSection h1 {
     text-align: center; /* Center align the title */
-    color: #e8e8e8; /* Gold color for section heading */
+    color: #e8e8e8; 
     margin-bottom: 1.5rem;
 }
 
 .locationContent {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     gap: 1rem; /* Space between image and text */
 }
 
 #locationImage {
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    max-width: 50%; /* Ensure the image doesn't exceed the container's width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Smooth edges */
+    flex-shrink: 0; 
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
 }
 
 #locationImage:hover {
-    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .locationDescription {
@@ -202,32 +202,32 @@ footer {
 .eventSection {
     display: flex;
     align-items: flex-start;
-    margin: 1.5rem 0; /* Add space around the event section */
+    margin: 1.5rem 0;
 	background: linear-gradient(135deg, #1f4068, #162447);
     border-radius: 15px;
 	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
-                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+                inset 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 #happeningImage, #upcomingImage {
-    flex: 0 0 auto; /* Prevent image from shrinking or growing */
-    max-width: 45%; /* Ensure the image width doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Adds smooth edges to the image */
-    overflow: hidden; /* Prevents content from overflowing */
-    object-fit: cover; /* Ensures the image fills the box, cropping if necessary */
-    display: block; /* Ensures consistent layout */
-    margin: 0 auto; /* Center the image */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    flex: 0 0 auto; 
+    max-width: 45%; 
+    height: auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
 #happeningImage:hover, #upcomingImage:hover {
-    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
+    transform: scale(1.02); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .eventDescription {
-    flex: 1; /* Description takes up the remaining space */
+    flex: 1;
     color: #e8e8e8;
 	text-align: justify;
 	padding: 2rem;
@@ -236,46 +236,46 @@ footer {
 .eventDescription h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #e8e8e8; /* Highlighted title in gold */
+    color: #e8e8e8;
 }
 
 .eventDescription p {
-    margin-bottom: 0.5rem; /* Space between paragraphs */
+    margin-bottom: 0.5rem; 
     font-size: 1rem;
-    color: #b0b0b0; /* Softer contrast for text */
+    color: #b0b0b0;
 }
 
 .facilityImage {
-    flex: 0 0 auto; /* Prevent image from shrinking or growing */
-    max-width: 35%; /* Ensure the image width doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Adds smooth edges to the image */
-    overflow: hidden; /* Prevents content from overflowing */
-    object-fit: cover; /* Ensures the image fills the box, cropping if necessary */
-    display: block; /* Ensures consistent layout */
-    margin: 0 auto; /* Center the image */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    flex: 0 0 auto; 
+    max-width: 35%; 
+    height: auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .facilityImage:hover {
-    transform: scale(1.02); /* Slightly enlarges the image (10% bigger) */
+    transform: scale(1.02);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a popping effect */
 }
 
 .facilitySection {
 	display: flex;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start;
     gap: 1rem; /* Space between image and text */
     margin: 1.5rem 0;
     background: linear-gradient(135deg, #1f4068, #162447);
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3),
-                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+                inset 0 0 10px rgba(0, 255, 255, 0.3); 
     color: #e8e8e8;
 }
 
 .facilityText {
-    flex: 1; /* Description takes up the remaining space */
+    flex: 1;
     color: #e8e8e8;
 	text-align: justify;
 	padding: 2rem;
@@ -290,7 +290,7 @@ footer {
 .facilitySection h2 {
 	font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #e8e8e8; /* Highlighted title in gold */
+    color: #e8e8e8;
 }
 
 .searchBar {
@@ -417,6 +417,141 @@ form button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+#membershipPlans {
+    text-align: center;
+}
+
+#membershipPlans h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#membershipPlans p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.membershipOptions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.membershipCard {
+	background: linear-gradient(135deg, #1f4068, #162447);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
+                inset 0 0 10px rgba(0, 255, 255, 0.3);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membershipCard h3 {
+    font-size: 1.8em;
+    color: #e8e8e8;
+    margin-bottom: 15px;
+}
+
+.membershipCard p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.membershipCard ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+}
+
+.membershipCard ul li {
+    margin-bottom: 10px;
+}
+
+.membershipCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#membershipNote {
+	margin-top: 1rem;
+	color: #e8e8e8;
+}
+
+.about-section {
+    background: linear-gradient(135deg, #1f4068, #162447);
+    color: #ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #e8e8e8; /* Gold for emphasis */
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #e8e8e8;
+}
+
+/* Founder Section Styling */
+.founder-section {
+    background: linear-gradient(135deg, #1f4068, #162447);
+    color: #ffffff;
+    margin: 20px auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px; 
+}
+
+.founder-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #e8e8e8; 
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+}
+
+.founder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Space between the image and the description */
+}
+
+.founder-image img {
+    width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.founder-image:hover {
+    transform: scale(1.05);
+}
+
+.founder-description {
+    text-align: justify;
+    max-width: 700px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
 .contactInfo, .contactForm, .socialLinks {
     margin-bottom: 2rem;
     padding: 2rem;
@@ -424,7 +559,7 @@ form button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 
-                inset 0 0 10px rgba(0, 255, 255, 0.3); /* Outer and inner glow */
+                inset 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .contactInfo h2, .contactForm h2, .socialLinks h2 {
